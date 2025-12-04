@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliothèque</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+  <h1>Ma Bibliothèque</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="bibliotheque.html" class="active">Bibliothèque</a></li>
+      <li><a href="home.html">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Rechercher -->
+  <section class="search-section">
+    <h2>Rechercher un livre</h2>
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Titre ou auteur..." required>
+      <button type="submit">Rechercher</button>
+    </form>
+
+    <h3>Résultats :</h3>
+    <ul id="searchResults"></ul>
+  </section>
+
+  <!-- Catégories -->
+  <section class="categories">
+    <h2>Catégories</h2>
+    <div class="category-list">
+      <div class="category">Roman</div>
+      <div class="category">Science Fiction</div>
+      <div class="category">Fantastique</div>
+      <div class="category">Histoire</div>
+      <div class="category">Manga</div>
+      <div class="category">Développement Personnel</div>
+    </div>
+  </section>
+
+  <!-- POPULAIRES -->
+  <section class="popular-books">
+    <h2>Livres Populaires</h2>
+    <div class="books-grid" id="popularBooks">
+      <div class="book-card"><h3>Harry Potter</h3><p>J.K. Rowling</p></div>
+      <div class="book-card"><h3>1984</h3><p>George Orwell</p></div>
+      <div class="book-card"><h3>Le Petit Prince</h3><p>Saint Exupéry</p></div>
+      <div class="book-card"><h3>Le Seigneur des Anneaux</h3><p>Tolkien</p></div>
+    </div>
+  </section>
+
+  <!-- LISTE -->
+  <section class="book-list-section">
+    <h2>Liste des livres</h2>
+    <ul id="books">
+      <li>Titre: Le Petit Prince — Auteur: Saint Exupéry</li>
+      <li>Titre: Harry Potter — Auteur: J.K. Rowling</li>
+      <li>Titre: Les Misérables — Auteur: Victor Hugo</li>
+      <li>Titre: 1984 — Auteur: George Orwell</li>
+      <li>Titre: Le Seigneur des Anneaux — Auteur: Tolkien</li>
+    </ul>
+  </section>
+
+  <!-- AJOUTER -->
+  <section class="add-book-section">
+    <h2>Ajouter un livre</h2>
+    <form id="addBookForm">
+      <input type="text" id="title" placeholder="Titre du livre" required>
+      <input type="text" id="author" placeholder="Auteur" required>
+      <button type="submit">Ajouter</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Bibliothèque</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
